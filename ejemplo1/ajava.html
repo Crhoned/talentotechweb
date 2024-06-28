@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>
+        Laboratorio 3
+    </h1>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form id="calculoForm">
+        <h2>Ejercicio 1</h2>
+               <label >Número:</label>
+                <input type="number" id="numero1" required>
+                <br>
+                <button id="eje1btn" type="button">positivo,negativo o cero</button>
+                <br>
+                <p  class="resultado" id="resultado1"></p>
+        <h2>Ejercicio 2</h2>
+            <label >Número:</label>
+            <input type="number" id="numero2" required>
+            <br>
+            <button id="eje2btn" type="button">Par o impar</button>
+            <br>
+            <p class="resultado" id="resultado2"></p>
+        <h2>Ejercicio 3</h2>
+           <label >Que edad tiene?:</label>
+            <input type="number" id="edad" required>
+            <br>
+            <button id="eje3btn" type="button">¿Puede votar?</button>
+            <br>
+            <p class="resultado" id="resultado3"></p>
+        <h2>Ejercicio 4</h2>
+          <label >Número1:</label>
+            <input type="number" id="numero3" required>
+            <br>
+            <label >Número2:</label>
+            <input type="number" id="numero4" required>
+            <br>
+            <button id="eje4btn" type="button">cual es mayor?</button>
+            <br>
+            <p class="resultado" id="resultado4"></p>
+        <h2>Ejercicio 5</h2>
+            <label >monto de compra:</label>
+            <input type="number" id="precio" required>
+            <br>
+            <button id="eje5btn" type="button">tiene diescuento?</button>
+            <br>
+            <p class="resultado" id="resultado5"></p>
+        <h2>Ejercicio 6</h2>
+            <label >Numero del dia de la semana:</label>
+            <input type="number" id="dia" required>
+            <br>
+            <button id="eje6btn" type="button">Que dia es?</button>
+            <br>
+            <p class="resultado" id="resultado6"></p>
+        <h2>Ejercicio 7</h2>
+            <label >estación del año según el mes:</label>
+            <input type="number" id="mes" required>
+            <br>
+            <button id="eje7btn" type="button">Que estación es encima de la linea del ecuador?</button>
+            <br>
+            <p class="resultado" id="resultado7"></p>
+      </form>
+      
+      
+<p id="resultadoResta"></p>
+            
+        <script>
+            // Ejercicio 1. 
+            document.getElementById("eje1btn").addEventListener("click", function() 
+            {
+            var validaNum = parseInt(document.getElementById("numero1").value);
+            if(validaNum == 0){
+                    var suma = "CERO"
+                } else if(validaNum < 0){
+                    var suma = "NEGATIVO"
+                } else if(validaNum > 0){
+                    var suma = "POSITIVO"
+                } else{
+                    document.write("El valor digitado NO es un número")
+                }
+            document.getElementById("resultado1").innerText = "El número es: " + suma;
+            });
+            // Ejercicio 2.
+            document.getElementById("eje2btn").addEventListener("click", function() 
+            {
+            var numero2 = parseInt(document.getElementById("numero2").value);
+            var residuo = numero2 % 2
+            if(residuo == 0){
+                    var ress = "PAR"
+        
+                } else{
+                    var ress = "INPAR"
+                }
+            document.getElementById("resultado2").innerText = "El número es: " + ress;
+            });
+            
+            // Ejercicio 3.
+            document.getElementById("eje3btn").addEventListener("click", function() 
+            {
+            var edadd = parseInt(document.getElementById("edad").value);
+            
+            if(edadd >= 18){
+                    var voto = "SI"
+        
+                } else{
+                    var voto = "NO"
+                }
+            document.getElementById("resultado3").innerText = "La persona " + voto + " puede votar";
+            });
+            // Ejercicio 4.
+            document.getElementById("eje4btn").addEventListener("click", function() 
+            {
+            var num3 = parseInt(document.getElementById("numero3").value);
+            var num4 = parseInt(document.getElementById("numero4").value);
+            if(num3 == num4){
+                    var resss = "IGUAL"
+                } else if(num3 < num4){
+                    var resss = "MENOR"
+                } else{
+                    var resss = "MAYOR"
+                }
+            document.getElementById("resultado4").innerText = "El numero 1 es " + resss + " que el numero 2";
+            });
+            
+            // Ejercicio 5.
+            document.getElementById("eje5btn").addEventListener("click", function() 
+            {
+            var compra = parseInt(document.getElementById("precio").value);
+           
+            if(compra >= 100){
+                    var descuento = "SI";
+                    compra = compra-(compra*0.1)
+                    
+                } else{
+                    var descuento = "NO"
+                }
+            document.getElementById("resultado5").innerText = "La compra " + descuento + " tiene descuento, el valor de la compra es:"+ compra;
+            });
+            // Ejercicio 6.
+            document.getElementById("eje6btn").addEventListener("click", function() 
+            {
+            var numdia = parseInt(document.getElementById("dia").value);
+            switch(numdia){
+                case 1:
+                    var dias = "lunes"
+                    break;
+                    case 2:
+                    var dias = "Martes"
+                    break;
+                    case 3:
+                    var dias = "Miercoles"
+                    break;
+                    case 4:
+                    var dias = "Jueves"
+                    break;
+                    case 5:
+                    var dias = "Viernes"
+                    break;
+                    case 6:
+                    var dias = "Sabado"
+                    break;
+                    case 7:
+                    var dias = "Domingo"
+                    break;
+            }
+           
+            document.getElementById("resultado6").innerText = "el dia numero " + numdia + " es:"+ dias ;
+            });
+            
+            // Ejercicio 7.
+            document.getElementById("eje7btn").addEventListener("click", function() 
+            {
+            var nummes = parseInt(document.getElementById("mes").value);
+           
+            switch(nummes){
+                case 1,2,12:
+                    var estacion = "Invierno"
+                    break;
+                    case 3,4,5:
+                    var estacion = "Primavera"
+                    break;
+                    case 6,7,8:
+                    var estacion = "Verano"
+                    break;
+                    case 9,10,11:
+                    var estacion = "Otoño"
+                    break;
+            }
+           
+            document.getElementById("resultado7").innerText = "el mes numero " + nummes + " está en: "+ estacion ;
+            });
+            
+    </script>
+      
+</body>
+<style>
+    .resultado{
+        color: red;
+        border: solid;
+        border-color: rgb(73, 141, 204);
+    }
+</style>
+</html>

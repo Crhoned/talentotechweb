@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="color: cornflowerblue; background-color: rgb(36, 36, 87);" >
+        <!-- Encabezado -->
+        <tr style="color: azure; background-color: rgb(15, 15, 31);">
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Ciudad</th>
+            <th>Edad</th>
+            <th>Profesion</th>
+            <th>Fecha de nacimiento</th>
+        </tr>
+        <!-- Datos -->
+        <tr>
+            <td>Mario Sanchez</td>
+            <td>mario@correo.com</td>
+            <td>Manizales</td>
+            <td>31</td>
+            <td>Ingeniero de Sistemas</td>
+            <td>04-10-1992</td>
+        </tr>
+        <tr>
+            <td>Juan Perez</td>
+            <td>juan@correo.com</td>
+            <td>Bogota</td>
+            <td>28</td>
+            <td>Tecnologo en recursos humanos</td>
+        </tr>
+        <tr>
+            <td>Lorena Rodriguez</td>
+            <td>lorena@correo.com</td>
+            <td>Cali</td>
+            <td>35</td>
+            <td>Esteticista</td>
+        </tr>
+        <tr>
+            <td>Marcela Morales</td>
+            <td>marcela@correo.com</td>
+            <td>Medellin</td>
+            <td>23</td>
+            <td>Ingeniera Electrica</td>
+        </tr>
+        <tr>
+            <td>Edison Steeven</td>
+            <td>eangulof@correo.com</td>
+            <td>Bogotá</td>
+            <td>25</td>
+            <td>Ingeniera Electrónica</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- Formulario -->
+    <form method="post">
+        <!-- Campo de texto -->
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Escriba el nombre" required name="nombre"> 
+        <!-- Salto de linea -->
+        <br>
+        <!-- Campo Fecha -->
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha">
+        <br>
+        <!-- Campo Numerico -->
+        <label for="">Ingresos mensuales</label>
+        <input type="number" required placeholder="Salario mensual" name="ingresos">
+        <br>
+        <!-- Campo Email -->
+        <label for="">Correo electronico</label>
+        <input type="email" required placeholder="Ingresar Email" name="correo"> 
+        <br>
+        <!-- Campo Archivo -->
+        <label for="">Subir CV</label>
+        <input type="file" required placeholder="Subir Archivo" accept="image/*" name="CV"> 
+        <br>
+        <!-- Campo password -->
+        <label for="">Password</label>
+        <input type="password" required name="comntraseña"> <br>
+        <!-- Campo Hora -->
+        <label for="">Hora de ingreso</label>
+        <input type="time" required name="hora_ingres"> <br>
+        <!-- Campo Mes -->
+        <label for="">Mes de ingreso a la empresa</label>
+        <input type="month" required name="mes_ingres"> <br>
+        <!-- Campo Color -->
+        <label for="">Color del uniforme</label>
+        <input type="color" required name="color_uniforme"> <br>
+        <!-- Campo Radio -->
+        <label for="">Genero</label>
+        <input type="radio" name="genero" value="F" required name="genero">
+        <label for="">Femenino</label>
+        <input type="radio" name="genero" value="M" required name="genero">
+        <label for="">Masculino</label> <br>
+        <!-- Campo Checkbox -->
+        <label for="">Dias Laborados</label>
+        <input type="checkbox" name="dias" value="1" name="dias_laborados">
+        <label for="">Lunes</label>
+        <input type="checkbox" name="dias" value="2" name="Lunes">
+        <label for="">Martes</label>
+        <input type="checkbox" name="dias" value="3" name="marcela">
+        <label for="">Miercoles</label>
+        <input type="checkbox" name="dias" value="4" name="mie">
+        <label for="">Jueves</label>
+        <input type="checkbox" name="dias" value="5" name="jue">
+        <label for="">Viernes</label> <br>
+        <!-- Campo URL -->
+        <label for="">Link Perfil Linkedin</label>
+        <input type="url" required name="LinkedIn"> <br>
+        <!-- Campo Telefono -->
+        <label for="">Telefono</label>
+        <input type="tel" required name="Telefono"> <br>
+        <!-- Selector -->
+        <label for="">Escoja una ciudad</label>
+        <select name="" id="" required name="ciudad">
+            <option value="">-</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Cali">Cali</option>
+        </select> <br>
+        <!-- Fieldset -->
+        <fieldset>
+            <legend>Informacion General</legend>
+            <!-- Text Area -->
+            <label for="">Descripcion del Perfil</label>
+            <textarea name="" id="" cols="50" rows="5"></textarea> <br>
+            <label for="">Tipo documento</label>
+            <input list="documento">
+            <!-- Datalist -->
+            <datalist id="documento">
+                <option value="Cedula">Cedula</option>
+                <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </datalist> <br>
+            <label for="">Cedula</label>
+            <input type="text">
+        </fieldset>
+        
+        <!-- Button -->
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

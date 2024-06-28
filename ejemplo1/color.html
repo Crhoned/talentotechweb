@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="color1">
+       Elemento 1 
+    </div>
+    <div class="color2 bordes margen">
+        <i class="fa-solid fa-user-doctor"></i>
+        Elemento 2
+    </div>
+    <div>
+        <h1 class="text-shadow">Titulo <i class="fa-brands fa-discord"></i></h1>
+        <p class="alineacion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis in amet minima aut praesentium, expedita inventore nostrum quibusdam a et. Ducimus nisi asperiores, enim maxime repudiandae praesentium esse sit.</p>
+    </div>
+    <button><i class="fa-solid fa-user-doctor"></i>medico</button>
+    <a href="https://campus.talentotechbogota.co" class="enlace" target="_blank">TalentoTech</a>
+    <div>
+        <h1>Listas</h1>
+        <ul>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pescado</li>
+        </ul>
+    </div>
+    <div>
+        <h1>Tabla</h1>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Cali</td>
+                <td>juan@correo.com</td>
+            </tr>
+            <tr>
+                <td>Camila</td>
+                <td>Pereira</td>
+                <td>ruiz@correo.com</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Cucuta</td>
+                <td>luis@correo.com</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>pocisionamientpo</h1>
+            <div class="relative">
+               relativo
+               <div class="absolute">
+                absoluoto
+                <div class="fixed">
+                    fijado
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloremque aperiam accusamus earum quae autem qui magnam, maxime quidem placeat repellendus dolorem sunt laudantium, nisi quibusdam. Laboriosam praesentium quas necessitatibus.
+                    </p>
+                </div>
+               </div> 
+            </div>
+    </div>
+    <div>
+        <h1>float</h1>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem reprehenderit totam at sequi, ea ullam est eaque nesciunt aliquid id recusandae provident commodi, error eos fugit minima. Commodi, inventore tempora!
+                <img  class="float" src="https://i.pinimg.com/736x/fd/d2/e4/fdd2e483bc52d4de99abfaadc8009446.jpg" alt="" width="100px">
+            </p>
+        </div>
+    </div>
+</body>
+
+<style>
+.color1 {
+    background-color: tomato;
+    color: rgb(194, 221, 39);
+    border-color: blue;
+    border: solid;
+    border-width: 15px;
+    opacity: 0.5;
+}
+.color2 {
+    width: 80%;
+    height: 300px;
+
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACiCAMAAAD84hF6AAAAkFBMVEUAKFf///8AJVUcOmQ5T3IAFU7z9feZobEAAEi8wMkAAEAAD0wAHFEAIlS0usUADUxyfpUAEk0AIFMABkl7h5zCxs4AGE/b3+Vsdo3N0dnT196kq7nl6OwAGU8AAEXv8vRgbIWgqbdOXnwAADuSna6HkaREV3coP2autsJicowPL1wxRms3TXAAADKCj6MAADevmzqrAAAGsElEQVR4nO3ca3eaShiGYQYFxwAiECB4AE08kJjd/P9/t4GBYfDU5N0kq5s+94euwgCpVzmJttpIQ19NH2tg+3pgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZS/bP5Tr/b+yPrnc1/fV4rk7Yhaiwjw9Dlooat/EEMz/OaGY4RqeOR2EakNaNB4Pntqjyt83p9Jffqnc1+YuNImdpOyrZj4WbvJtu32s1/3T5JN12f5Hm+nFcznMN2Ymv+ZinGo4loJ5a2T8skyTdus2qU1ZmzH3Prn+2VsYN0s6ZMJDwKU8a2hhjzcjazmgWDRbXYtJphTBibeMWvYjytt8EqKecgJvbND/GaYRZKyu/uW9haN/04PsZsexqLXcydsh2LuRjzliyXbK7JdqPjUSxWsjHba9ic8fuYsdP7u9hGyFYjfcbMoF51OGyKm5Mu2M51xIHpmcw22aieUNmCjG0e0lQcygVbyPKHhk1zfIcxzxGDacb2ln9izWaGxMYO8rrAC7b6sPSf2eqfaXN4nbOt4jgeNXvbJGaaZCvOfIyta6W0POLLGYf6MjMkNvmiVLbybKb9YgtxlF5hW0m2/MBmuztsGmPP9cV0SGyJvCoobDwTL08cspcHKeeCpmT7WLDldTaTPa71t+JkN7y9LUnl3VnL5hQn9v1uv6ovq+W+98K58C3YXh+aiZKNj5l5lY3HxWrpvJhR/4DhsCVcqilsxpYtHqJ0y8KgnmTFcTmpqAq2bLGIxWmvZLPSkLVsWsu23hc+M1ZvRBsQm6qmuQnb1XtUzPbr8rqQVXub/habJqvvUe3X4veM5dVEtGO54Rwzs16xYpN3xu6yXDLRmp9xmy3y6tZaz30HW6iqFXPWzdXBX5dncWddC+hBFEVeLWNb63bCKRd0Ale+XH29brfpRaOjE8jpm2x81QzEgdZv/bPNk67ad6Tryo/4DBvv+w/QN5t+sr9drdsg2DTH+GxR+ZDjdqq+s/YC7nqRbXseL35jD25vO24nn604Ed5eeHtqaHyLn37lySorLwWmuYrD5XzEveaMOQi28ubss2nW8s5o/S7AT59n5uVotjxyAQe2K2x8s7q1QHKsblfAdsnG83sbeEw1sF1h48n9LWw52C7Zgu3vNvFkD4TtQGObhmclY+f8r8BcLeLsbBbXB8Gmj+bXan0m7czy2VHTh3ue0z1Ew9e3lHOeeqe9epGYrwfBpun2lYK5fG0bS85V2V7OV/GLvwFlrzqkzS2uY6TKsZ0ELdv0hat9/J/YrmY/tmzKJ5wK2+bprI2vrKR+iFj0MJUDK96yZYtucmC4bBdlvHwgVxemnc05p+msLve829v4C9lW3JrJiX3U3Z5uNXka2Lpsbign5vbtbYPtJtvjX8o2Z6aow2ZMmtmXxYGXy4lJdHvb0c1NyBZ//NPdG/mu+yDirkJgy9nlQCdD05Sx7t6mW3KxYsBzU7ng2b0fF3NT1+332enPfS3Qmk1F4U5x052wma3uhlX2vBkrBg1lQI9mcmBvl6cAuWCX19/IrZ96dfs5Ni7fFiXKIaPb8gS0P/98yX9WTk/PaaPqWFF7R1Z9f8lrH5MYnS0op9Rxr99W/Dm2QL5TusH2+BCc9aK+iwo3VnXvHxyW6lPL8ksTypVlcGxr+RJusMXJeeGme0Esv1xz9tByUT1xGzCbbvyG7TLzZXpntOpYagyZrd3dPs/mBvF9tdfq6jJoNo3Pvspm6dbdx7sb8R2RYbM1Hwx8gU3T08crH1uJwlF97R04m8Y38VfYWLkzRd58cWUoW57klyaGfANS5fP3Xb5Tb9Ac+Qjosrz+Rj3XnpaL9mm4uZjt39uPl8v7YrlK95Z5KGwFU3T2tSnrdvKfGei2F6RcfzsejyPNTYv3Z10E+2KNev5g2P5DuugLa4CNFNhIgY0U2EiBjRTYSIGNFNhIgY2UPc9WouwdbJ/Plt+j6fc/Phg423cFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZSYCMFNlJgIwU2UmAjBTZS+vhfzO6MNa1THIUAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    background-attachment: scroll;
+
+    
+}       
+.margen{
+    margin-left: 50px;
+    margin-top: 10px; 
+    margin-bottom: 30px;
+}
+.bordes{
+    border: dotted;
+    border-color: aquamarine;
+    border-width: 10px;
+    border-radius: 200px;
+}
+.alineacion-texto {
+    text-align: center;
+    text-align-last: right;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-decoration-line: underline;
+    text-decoration-color: rebeccapurple;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+    
+    text-transform: capitalize;
+    /* sangria */
+    text-indent: 50px; 
+    text-emphasis-position: 10px;
+    letter-spacing: 2px;
+    line-height: 2;
+    word-spacing: 10px;
+    font-family: cursive;
+}
+.text-shadow{
+    color: aqua;
+    text-shadow: 2px 10px 5px rebeccapurple;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: 10px;
+    font-size: 80px;
+}
+.fa-solid{
+    color: aqua;
+    text-shadow: 2px 10px 5px rebeccapurple;
+}
+.fa-bath{
+    color: aqua;
+    text-shadow: 2px 10px 5px rebeccapurple;
+}
+.enlace:hover{
+    color: rosybrown;
+}
+.enlace:active{
+    color:rgb(43, 70, 145);
+}
+.enlace:link{
+    color: rgb(31, 143, 65);
+}
+ul>li {
+    list-style-type: square; 
+    /* list-style-image: url('https://raw.githubusercontent.com/Marvel999/Android-Loading-Animation/master/LoadingAnimation/src/main/res/drawable/triad_ring.gif'); */
+}
+table#estilo-tabla {
+        border: 1px solid;
+        width: 70%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid;
+        padding: 10px;
+        border-color: #2260bd;
+    }
+    table#estilo-tabla tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+
+    table#estilo-tabla tr:hover {
+        background-color: #C5D61D;
+        color: aliceblue;
+    }
+    table#estilo-tabla th {
+        background-color: #04918a;
+        color: rgb(167, 240, 140);
+    }
+    .relative{
+        border: 3px solid #2260bd;
+        width: 400px;
+        height: 200px;
+        position: relative;
+
+    }
+
+    .absolute{
+        border: 3px solid #bd7f22;
+        width: 150px;
+        height: 100px;
+        right: 0;
+        position: absolute;
+    }
+    .fixed{
+        border: 10px solid green;
+        width: 200px;
+        height: 50px;
+        left: 0;
+        top: 200px;
+        position: fixed;
+        background-color: #2260bd;
+
+        overflow: scroll;
+    }
+    .float{
+width: 100px;
+float: left;
+height: 150px;
+}
+h1::first-letter{
+    color: red;
+    background-color: green;
+    font-size: 50px;
+}
+</style>
+
+</html>

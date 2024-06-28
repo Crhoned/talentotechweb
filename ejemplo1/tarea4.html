@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<headb id="headd">
+      <img class="imageninicial"  id="imageninicial" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSCrmy-FYc3hHpXmANQuy6bJZv_f63K1OasQ&s" alt="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crepes & Waffles</title>
+</head>
+<body id="body">
+    <div>
+        fondo: 
+        <select name="" id="fondo" onchange="colorpag()">
+            <option value="white">blanco</option>
+            <option value="gray">gris</option>          
+            <option value="chocolate">cafe claro</option>
+        </select>
+        <select name="" id="tamano" onchange="tamanologo()">   
+            <option value="mediano">mediano</option> 
+            <option value="grande">grande</option>         
+            <option value="pequeno">pequeño</option>
+        </select>
+    </div>
+    <div>
+        <h1>Crepes & Waffles</h1>
+    </div>
+    
+    <div>
+        <p>Somos una empresa dedicada a ofrecer deliciosos crepes y waffles, con una amplia variedad de sabores y toppings para satisfacer los gustos más exigentes.</p>
+    </div>
+    
+    <div>
+        <h2 class="subtitulos">Lo que ofrecemos:</h2>
+        <ol class="lista">
+            <li>Crepes dulces y salados.</li>
+            <li>Waffles crujientes y deliciosos.</li>
+            <li>Variedad de salsas y acompañamientos.</li>
+            <li>Productos frescos y de alta calidad.</li>
+        </ol>
+    </div>
+    
+    <div>
+        <h2 class="subtitulos">Nuestros valores:</h2>
+        <ul class="lista">
+            <li>Calidad en cada bocado.</li>
+            <li>Innovación en nuestros sabores.</li>
+            <li>Servicio excepcional al cliente.</li>
+            <li>Sostenibilidad y responsabilidad social.</li>
+        </ul>
+    </div>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nrs7hc-0c1E" frameborder="0" allowfullscreen></iframe>
+    
+    <!-- enlace a pag -->
+    <div>
+        <a href="https://drive.google.com/drive/folders/1ew6fEID24Xwyl9HN94LCJpiutBSo6zaw?usp=sharing" target="_blank">Ir a creeps menu</a>
+    </div>
+
+    <div>
+        <h2 class="subtitulos">Solicitud de información</h1>
+    </div>
+
+    <form >
+        <!-- Campo de texto -->
+        <label for="">Nombre</label>
+        <input  class="formulario" type="text" placeholder="Escriba el nombre" required name="nombre"> 
+        <br>
+        <fieldset class="formulario">
+            <legend>Informacion General</legend>
+            <label for="">Tipo documento</label>
+            <input class="formulario" list="documento">
+            <!-- Datalist -->
+            <datalist  id="documento" name="tipoDocumento">
+                <option value="Cedula">Cedula</option>
+                <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </datalist> <br>
+            <label for="">Numero de documento</label>
+            <input class="formulario" type="text" name="numeroDocumento">
+        </fieldset>
+        <!-- ciudad -->
+        <label for="">Escoja una ciudad</label>
+        <select class="formulario" name="" id="" required name="ciudad">
+            <option value="">-</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Cali">Cali</option>
+        </select> <br>
+        <!-- Campo Numerico -->
+        <label for="">Telefono</label>
+        <input class="formulario" type="number" required placeholder="Telefono" name="Telefono">
+        <br>
+        <!-- Campo de texto -->
+        <label for="">dirección</label>
+        <input class="formulario" type="text" placeholder="Escriba direccion" required name="direccion"> 
+        <br>
+        <!-- Campo Email -->
+        <label for="">Correo electronico</label>
+        <input class="formulario" type="email" required placeholder="Ingresar Email" name="correo"> 
+        <br>
+        <!-- Campo Archivo -->
+        <label for="">Subir anexos</label>
+        <input class="formulario" type="file" required placeholder="Subir Archivo" accept="image/*" name="CV"> 
+        <br>
+        
+        <!-- Campo Fecha -->
+        <label for="">Fecha de nacimiento</label>
+        <input class="formulario" type="date" required max="2024-01-01" min="1900-01-01" value="2023-05-02" name="fecha">
+        <br>
+
+        <legend>Solicitud</legend>
+        <!-- Text Area -->
+        <label for="">Descripcion del SU Solicitud</label>
+        <textarea class="formulario" name="textarea" id="" cols="50" rows="5"></textarea> <br>
+
+        <!-- Button -->
+        
+        <button class="botonf" type="button" onclick="mostrarDatos()">Enviar</button>
+
+        <div>
+            <h2 class="subtitulos">Ventas por mes del año 2023</h1>
+        </div>
+
+        <table class="estilo_tabla">
+            <!-- Encabezado -->
+            <tr>
+                <th>Més</th>
+                <th>Ingresos</th>
+            </tr>
+            <!-- Datos -->
+            <tr>
+                <td>enero</td>
+                <td>30133520 </td>
+            </tr>
+            <tr>
+                <td>fabero</td>
+                <td>3235000000 </td>
+            </tr>
+            <tr>
+                <td>marzo</td>
+                <td>412300000 </td>
+            </tr>
+            <tr>
+                <td>abril</td>
+                <td>125160000 </td>
+            </tr>
+            <tr>
+                <td>mayo</td>
+                <td>313400002 </td>
+            </tr>
+            <tr>
+                <td>junio</td>
+                <td>331240000 </td>
+            </tr>
+            <tr>
+                <td>julio</td>
+                <td>3019876000 </td>
+            </tr>
+            <tr>
+                <td>agosto</td>
+                <td>1123000000 </td>
+            </tr>
+            <tr>
+                <td>septiembre</td>
+                <td>2133642000 </td>
+            </tr>
+            <tr>
+                <td>octubre</td>
+                <td>2351660000 </td>
+            </tr>
+            <tr>
+                <td>noviembre</td>
+                <td>3234100000 </td>
+            </tr>
+            <tr>
+                <td>diciembre</td>
+                <td>8990920000 </td>
+            </tr>
+
+
+        </table>
+        <hr>
+        
+    </form>
+
+</body>
+
+<style>
+    .imageninicial{
+        width: 50%;
+        border-radius: 20px;
+        border: 3px solid black;
+        padding: 5px;
+        position: static;
+        margin-left: 25%;
+    }
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+        background-color: rgb(80, 39, 10);
+        color: aliceblue;
+        letter-spacing: 5px;
+        text-align: center;
+        
+    }
+    h2::first-letter {
+        color: white;
+        background-color: chocolate;
+        font-size: 50px;
+        border-style: solid;
+        border-radius: 2px;
+        border-color: brown;
+    }
+    .subtitulos{
+        background-color: rgb(73, 39, 14);
+        color: chocolate;
+    }
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+        font-weight: bold;
+    }
+    .formulario{
+        width: 100%;
+        padding: 10px 20px;
+        margin: 8px;
+        display: inline-block;
+        border: 1px solid chocolate;
+        border-radius: 5px;
+        box-sizing: border-box;
+    
+    }
+    .botonf {
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(133, 70, 25);
+        padding: 10px 20px;
+        width: 50%;
+        margin: 10px;
+        border: none;
+        cursor: pointer;      
+        position: relative;
+        left: 25%;
+    }
+    .estilo_tabla{
+        border: 1px solid;
+        width: 50%;
+        position: relative;
+        left: 25%;
+        border-collapse: collapse;
+    }
+    table.estilo_tabla th{
+        border: 1px solid;
+        height: 50px;
+        background-color: #885220;
+        color: white;
+    }
+    table.estilo_tabla td{
+        /* border: 1px solid; */
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) {background-color: #f2f2f2;}
+    .estilo_tabla td:nth-child(2)::before{
+        content: " $ ";
+    }
+    .estilo_tabla td:nth-child(2)::after{
+        content: " COP ";
+    }
+    table.estilo_tabla tr:hover {
+        background-color: #9b5933;
+        color: aliceblue;
+    }
+    .lista{
+        background: #5f4216;
+  height: auto;
+      margin: 10px;
+      padding: 20px;
+      
+    }
+    .lista li{
+        background: #fff7cc;
+  color: rgb(31, 27, 23);
+  margin: 5px;
+  margin-left: 30px;
+     
+    }
+</style>
+<script>
+    function colorpag(color){
+       var body = document.getElementById("body")
+       var fondo = document.getElementById("fondo").value 
+       body.style.backgroundColor = fondo
+       
+    }
+    function tamanologo() {
+        const tamano = document.getElementById("tamano").value;
+        const imagen = document.getElementById("imageninicial");
+        
+        if (tamano === "grande") {
+            imagen.style.width = "70%";
+            imagen.style.marginLeft = "15%";           
+        } else if (tamano === "mediano") {
+            imagen.style.marginLeft = "25%"; 
+            imagen.style.width = "50%";
+        } else if (tamano === "pequeno") {
+            imagen.style.width = "30%";
+            imagen.style.marginLeft = "35%"; 
+        }
+    }
+
+    function mostrarDatos() {
+      
+        const nombre = document.getElementsByName("nombre")[0].value;
+        const tipoDocumento = document.getElementsByName("tipoDocumento")[0].value;    
+        const numeroDocumento = document.getElementsByName("numeroDocumento")[0].value;     
+        const ciudad = document.getElementsByName("ciudad").value;     
+        const telefono = document.getElementsByName("Telefono")[0].value;
+        const direccion = document.getElementsByName("direccion")[0].value;
+        const correo = document.getElementsByName("correo")[0].value;    
+        const fecha = document.getElementsByName("fecha")[0].value;    
+        const solicitud = document.querySelector("textarea").value;
+        alert(`Nombre: ${nombre}\nTipo de Documento: ${tipoDocumento}\nNúmero de Documento: ${numeroDocumento}\nCiudad: ${ciudad}\nTeléfono: ${telefono}\nDirección: ${direccion}\nCorreo: ${correo}\nFecha de Nacimiento: ${fecha}\nSolicitud: ${solicitud}`);
+    }
+</script>
+</html>
+
+
+

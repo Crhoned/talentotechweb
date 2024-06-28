@@ -1,0 +1,17 @@
+CMake Error at C:/Users/corre/OneDrive/Escritorio/talento/ejemplo1/blik/blink/build/CMakeFiles/CMakeTmp/CMakeLists.txt:18 (add_executable):
+  Cannot find source file:
+
+    C:/Users/corre/OneDrive/Escritorio/talento/ejemplo1/blik/blink/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+
+
+CMake Error at C:/Users/corre/OneDrive/Escritorio/talento/ejemplo1/blik/blink/build/CMakeFiles/CMakeTmp/CMakeLists.txt:18 (add_executable):
+  No SOURCES given to target: cmTC_32be5
+
+
+CMake Error at C:/Users/corre/esp/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile):
+  Failed to generate test project build system.
+Call Stack (most recent call first):
+  C:/Users/corre/esp/v5.2.1/esp-idf/tools/cmake/project.cmake:506 (__project)
+  CMakeLists.txt:6 (project)
+
+
